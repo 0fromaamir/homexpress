@@ -60,6 +60,10 @@ const routes: Routes = [
   {
     path: 'homepage',
     loadChildren: () => import('./homepage/homepage.module').then( m => m.HomepagePageModule)
+  },
+  {
+    path: 'addnewproperty',
+    loadChildren: () => import('./addnewproperty/addnewproperty.module').then( m => m.AddnewpropertyPageModule)
   }
 ];
 @NgModule({

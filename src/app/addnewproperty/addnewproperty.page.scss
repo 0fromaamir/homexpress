@@ -1,0 +1,113 @@
+ion-content {
+    // ion-title{
+    //     padding: 0px 1rem;
+    // }
+    .mainDiv {
+        background: #F5F5F5;
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+        margin: 0px;
+    }
+
+    ion-label {
+        color: #818181;
+        Font-size: 10px;
+        Line-height: 14px;
+        font-weight: 400;
+    }
+
+    .middelDiv {
+        border-bottom: 10px solid;
+        border-color: #F5F5F5;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        ion-row {
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 1rem;
+
+            h3 {
+                margin: 0px;
+                Font-size: 13px;
+                Line-height: 18px;
+                Line-height: 100%;
+                text-Align: Left;
+                font-weight: 700;
+            }
+
+            ion-checkbox {
+                --border-radius: 40px;
+                height: 15px;
+                width: 15px;
+                margin-top: 6px;
+                --background-checked: #FFB800;
+                --border-color-checked: #FFB800;
+            }
+
+            p {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 100%;
+            }
+        }
+    }
+
+    .text {
+        padding-left: 1rem;
+        font-size: 11px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 15px;
+        color: #000000;
+    }
+    .middelRow {
+        margin: 0px 1rem;
+        margin-top: 10px;
+        ion-row {
+            padding-left: 1rem;
+            margin-top: 1rem;
+            padding-left: 1rem;
+        }
+        ion-label{
+            font-size: 11px;
+            font-weight: 400;
+            color:rgba(0, 0, 0, 1);
+        }
+        span{
+            color: rgba(255, 0, 0, 1);
+        }
+        ion-input {
+            border: 1px solid;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            --placeholder-color:rgba(129, 129, 129, 1);
+            --placeholder-opacity: 1;
+        }
+    }
+    .upperRow{
+        align-items: center;
+        display: flex;
+        margin: 1rem;
+        ion-checkbox{
+            height: 12px;
+            width: 13px;
+            --background-checked: #10F3C0;
+            --border-color-checked: #10F3C0;
+        }
+        ion-label{
+            font-size: 15px;
+            color: #1B2E4A;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="Header">
+        <ion-icon name="chevron-back-outline"></ion-icon> 
+        <ion-label>Save</ion-label>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainDiv">
+    <h2>Add New Property</h2>
+    <ion-label>Add a new property in 4 easy steps (tap to fill in)</ion-label>
+  </div>
+  <div class="middelDiv">
+    <ion-row >
+      <h3>Step 1/4 - Characteristics</h3>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 2/4 - Location</p>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 3/4 - Price and Availabilitys</p>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 4/4 - Media</p>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-row>
+  </div>
+  <ion-text class="text">1. Βασικά Χαρακτηριστικά</ion-text>
+  <ion-row class="middelRow">
+    <ion-col>
+      <ion-label >Εμβαδόν <span>*</span></ion-label>
+      <ion-input placeholder="π.χ. 100             τ.μ."></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-label >Όροφος <span>*</span></ion-label>
+      <ion-input placeholder="Επιλέξτε Όροφο"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-text class="text">Είναι κάτι από τα παρακάτω; <span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε αν ισχύει)</span></ion-text>
+ <ion-row class="upperRow">
+  <ion-checkbox checked="true"></ion-checkbox>
+  <ion-col>
+    <ion-label>Δώμα</ion-label>
+  </ion-col>
+  <ion-checkbox checked="true"></ion-checkbox>
+  <ion-col>
+    <ion-label>Ρετιρέ</ion-label>
+  </ion-col>
+  <ion-checkbox checked="true"></ion-checkbox>
+  <ion-col>
+    <ion-label>Οροφοδιαμέρισμα</ion-label>
+  </ion-col>
+ </ion-row>
+ <ion-row class="middelRow">
+   <ion-col>
+    <ion-label >Έτος Κατασκευής<span>*</span></ion-label>
+    <ion-input placeholder="π.χ. 2022"></ion-input>
+  </ion-col>
+  <ion-col>
+    <ion-label >Έτος Ανακαίνισης </ion-label>
+    <ion-input placeholder="π.χ. 2022"></ion-input>
+  </ion-col>
+</ion-row>
+<ion-text class="text">Κατάσταση Ακινήτου<span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε ένα)</span></ion-text>
+<ion-row class="middelRow">
+  <ion-col>
+    <ion-input placeholder="Εξαιρετική"></ion-input>
+  </ion-col>
+  <ion-col>
+      <ion-input placeholder="Αρκετά καλή"></ion-input>
+  </ion-col>
+  <ion-col>
+      <ion-input placeholder="Καλή"></ion-input>
+  </ion-col>
+  <ion-col>
+    <ion-input placeholder="Μέτρια"></ion-input>
+  </ion-col>
+</ion-row>
+</ion-content>
