@@ -1,0 +1,68 @@
+ion-content {
+    h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        margin-top: 9rem;
+        color: #000000;
+    }
+    .pragraph {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        margin: 0px;
+        color: #1B2E4A;
+    }
+    ion-item {
+        margin: 1rem 2rem;
+        --padding-start: 0px;
+         --min-height: 37px;
+        ion-input {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #818181;
+            --padding-bottom: 0px;
+        }
+    }
+    ion-button {
+        margin-top: 1rem;
+        --background: #10F3C0;
+        --border-radius: 100px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #1B2E4A;
+        width: 79vw;
+        text-transform: uppercase;
+        --padding-top: 3px;
+        --background-activated: #10F3C0;
+    }
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 1.5rem 0px;
+        a{
+            color: #10F3C0;
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+    ion-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 1.5rem 0px;
+    }
+}
