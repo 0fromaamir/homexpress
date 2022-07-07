@@ -8,7 +8,7 @@ ion-content {
     h2 {
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 21px;
         line-height: 27px;
         text-align: center;
         color: #000000;
@@ -16,7 +16,7 @@ ion-content {
     .pragraph {
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 16px;
         text-align: center;
         margin: 0px;
@@ -28,7 +28,7 @@ ion-content {
         ion-input {
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 16px;
             color: #818181;
             --padding-bottom: 0px;
@@ -40,32 +40,32 @@ ion-content {
         --border-radius: 100px;
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 16px;
         text-align: center;
         color: #1B2E4A;
         width: 79vw;
         text-transform: uppercase;
-        --padding-top: 3px;
+        // --padding-top: 3px;
         --background-activated: #10F3C0;
     }
     p {
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 16px;
         margin: 1.5rem 0px;
         a{
             color: #10F3C0;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             text-decoration: none;
         }
     }
     ion-label {
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 16px;
         margin: 1.5rem 0px;
     }

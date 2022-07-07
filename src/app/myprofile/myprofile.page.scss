@@ -20,7 +20,7 @@ ion-content {
         width: 22px;
         background: #10F3C0;
         color: white;
-        font-size: 18px;
+        font-size: 19px;
         padding: 2px 1px;
         font-weight: 700;
     }
@@ -28,7 +28,7 @@ ion-content {
     p {
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 16px;
         color: #00D2A3;
     }
@@ -47,7 +47,7 @@ ion-content {
         vertical-align: middle;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 19px;
         color: #1B2E4A;
     }
@@ -62,14 +62,14 @@ ion-content {
             --padding-bottom: 0px;
             font-style: normal;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 19px;
             color: #818181;
         }
         #placeholder-input{
             --placeholder-color: #1B2E4A;
             --placeholder-opacity: 1;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 400;
         }
         #input{
@@ -86,14 +86,14 @@ ion-content {
         p {
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 16px;
             color: #1B2E4A;
             margin-top: 2rem;
         }
         ion-label {
             font-style: bold;
-            Font-size: 12px;
+            Font-size: 13px;
             line-height: 16px;
             vertical-align: top;
             font-weight: 700;
@@ -103,7 +103,7 @@ ion-content {
     ion-text {
         font-style: italic;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 16px;
         text-align: center;
         color: #818181;
@@ -120,4 +120,5 @@ ion-content {
             width: 25vw;
         }
     }
+    
 }

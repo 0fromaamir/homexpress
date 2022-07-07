@@ -24,10 +24,38 @@ const routes: Routes = [
         loadChildren: () => import('../proplan/proplan.module').then( m => m.ProplanPageModule)
       },
       {
+        path: 'homepage',
+        loadChildren: () => import('../homepage/homepage.module').then( m => m.HomepagePageModule)
+      },
+      {
+        path: 'addnewproperty',
+        loadChildren: () => import('../addnewproperty/addnewproperty.module').then( m => m.AddnewpropertyPageModule)
+      },
+      {
+        path: 'myproperties',
+        loadChildren: () => import('../myproperties/myproperties.module').then( m => m.MypropertiesPageModule)
+      },
+      {
+        path: 'mymatches',
+        loadChildren: () => import('../mymatches/mymatches.module').then( m => m.MymatchesPageModule)
+      },
+      {
+        path: 'mypropertycharacterstics',
+        loadChildren: () => import('../mypropertycharacterstics/mypropertycharacterstics.module').then( m => m.MypropertycharactersticsPageModule)
+      },
+      {
+        path: 'mydemands',
+        loadChildren: () => import('../mydemands/mydemands.module').then( m => m.MydemandsPageModule)
+      },
+      {
+        path: 'mymatches2',
+        loadChildren: () => import('../mymatches2/mymatches2.module').then( m => m.Mymatches2PageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
-      }
+      },
     ]
   },
   {

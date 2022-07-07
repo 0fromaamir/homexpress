@@ -1,0 +1,96 @@
+ion-header{
+    ion-toolbar{
+    .Header{
+        display: flex;
+        justify-content: space-between;
+        ion-icon{
+            color: #000000;
+        }
+    }
+}
+}
+ion-content {
+    h2 {
+        font-size: 19px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    ion-label {
+        font-size: 15px;
+        font-weight: 400;
+        color: #00D2A3;
+    }
+
+    .mainDiv {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+        ion-text {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1B2E4A;
+            margin: 0px 2rem;
+        }
+    }
+
+    ion-card {
+        height: 25vh;
+        margin: 0px 2rem;
+        border-radius: 20px;
+        background: #F5F5F5;
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 15%);
+
+        img {
+            height: 11vh;
+            right: 50%;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mainRow {
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 15vh;
+            ion-icon {
+                font-size: 4vh;
+                color: #1B2E4A;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 400;
+                color: #1B2E4A;
+            }
+        }
+    }
+}
+
+.indicate {
+    position: absolute;
+    top: 6px;
+    left: 12px
+}
+
+.notification {
+    position: relative;
+}
+
+.icon {
+    background: #FFB800;
+    color: #FFB800;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (width: 768px) {
+    .indicate {
+        top: 13px;
+        left: 29px;
+    }
+}

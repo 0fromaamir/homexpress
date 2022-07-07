@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> <img src="./assets/icon/home.png"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>My matches:</p>
+  <div class="slide-background">
+    <ion-text>Previous Matches</ion-text>
+    <ion-row>
+      <ion-slides [options]="slideOpts">
+        <ion-slide>
+          <ion-card  routerLink="/tabs/mymatches">
+            <div class="slideTopBox"></div>
+            <div class="slideContent">
+              <p style="color:#00D2A3; margin: 0px;">[Match ID]</p>
+              <h1>Closed on: DD/MM/YY</h1>
+              <h2>with @username</h2>
+              <h2 style="text-decoration:underline">Tap to View</h2>
+            </div>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <div class="slideTopBox"></div>
+            <div class="slideContent">
+              <p style="color:#00D2A3; margin: 0px;">[Match ID]</p>
+              <h1>Closed on: DD/MM/YY</h1>
+              <h1>with @username</h1>
+              <h2 style="text-decoration:underline">Tap to View</h2>
+            </div>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <div class="slideTopBox"></div>
+            <div class="slideContent">
+              <p style="color:#00D2A3; margin: 0px;">[Match ID]</p>
+              <h1>Closed on: DD/MM/YY</h1>
+              <h1>with @username</h1>
+              <h2 style="text-decoration:underline">Tap to View</h2>
+            </div>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </div>
+  <ion-text style="font-weight:700">Current Matches <span style="color: #000000;">(slide for more)</span></ion-text>
+  <ion-row class="main-row">
+    <ion-col size="5">
+        <div class="d-flex">
+          <h3>by [Name]</h3>
+          <span >xx:xx</span>
+      </div>
+    </ion-col>
+    <ion-col size="7" class="ion-no-padding">
+      <ion-row>
+        <ion-col size="4" class="colIcon" style="background: #C0C0C0;">
+          <div class="ion-text-center">
+            <img src="./assets/icon/icon2.png" alt="">
+            <h4>More</h4>
+          </div>
+        </ion-col>
+        <ion-col size="4" class="colIcon"  style="background: #1B2E4A;">
+          <div class="ion-text-center" style="margin-top:5px">
+          <img src="./assets/icon/icon.png" alt="">
+            <h4>Unmatch</h4>
+          </div>
+        </ion-col>
+        <ion-col size="4" class="colIcon"  style="background: #10F3C0;">
+          <div  class="ion-text-center">
+            <img src="./assets/icon/icon3.png" alt="">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row class="middel-row">
+    <div class="flex">
+      <div class="box-height"></div>
+      <div class="text-left">
+        <p>[Property Name] by [Name]</p> 
+        <h4>[Match ID]</h4>
+        <h5>Tap to View Details</h5>
+      </div>
+    </div>
+    <h6>HH:HH</h6>
+  </ion-row>
+  <div class="border"></div>
+  <ion-row class="middel-row">
+    <div class="flex">
+      <div class="box-height"></div>
+      <div class="text-left">
+        <p>[Property Name]  by [Name]</p>
+        <h4>[Match ID]</h4>
+        <h5>Tap to View Details</h5>
+      </div>
+    </div>
+    <h6>HH:HH</h6>
+  </ion-row>
+  <div class="border"></div>
+  <ion-row class="middel-row">
+    <div class="flex">
+      <div class="box-height"></div>
+      <div class="text-left">
+        <p>[Property Name]  by [Name]</p>
+        <h4>[Match ID]</h4>
+        <h5>Tap to View Details</h5>
+      </div>
+    </div>
+    <h6>DD/MM</h6>
+  </ion-row>
+  <div class="border"></div>
+  <ion-row class="middel-row" style="margin-bottom:1rem">
+    <div class="flex">
+      <div class="box-height"></div>
+      <div class="text-left">
+        <p>[Property Name]  by [Name]</p>
+        <h4>[Match ID]</h4>
+        <h5>Tap to View Details</h5>
+      </div>
+    </div>
+    <h6>DD/MM</h6>
+  </ion-row>
+  <div class="border"></div>
+  
+
+</ion-content>

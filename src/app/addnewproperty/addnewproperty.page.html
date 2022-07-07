@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>
       <div class="Header">
-        <ion-icon name="chevron-back-outline"></ion-icon> 
+        <ion-icon name="chevron-back-outline"></ion-icon>
         <ion-label>Save</ion-label>
       </div>
     </ion-title>
@@ -15,72 +15,429 @@
     <ion-label>Add a new property in 4 easy steps (tap to fill in)</ion-label>
   </div>
   <div class="middelDiv">
-    <ion-row >
+    <ion-row>
       <h3>Step 1/4 - Characteristics</h3>
-      <ion-checkbox checked="true"></ion-checkbox>
+      <div class="check-box-div"  style="background: #FFB800; border:none">
+      <ion-checkbox checked="true" style=" margin:0px;--background-checked:#FFB800;
+      --border-color-checked:#FFB800; --checkmark-color: white;" ></ion-checkbox>
+      </div>
     </ion-row>
     <ion-row class="mainRow">
       <p>Step 2/4 - Location</p>
-      <ion-checkbox checked="true"></ion-checkbox>
+      <div class="check-box-div">
+        <ion-checkbox checked="true" class="custom-check-box"></ion-checkbox>
+      </div>
     </ion-row>
     <ion-row class="mainRow">
       <p>Step 3/4 - Price and Availabilitys</p>
-      <ion-checkbox checked="true"></ion-checkbox>
+      <div  class="check-box-div">
+        <ion-checkbox checked="true" class="custom-check-box"></ion-checkbox>
+      </div>
     </ion-row>
     <ion-row class="mainRow">
       <p>Step 4/4 - Media</p>
-      <ion-checkbox checked="true"></ion-checkbox>
+      <div  class="check-box-div">
+        <ion-checkbox checked="true" class="custom-check-box"></ion-checkbox>
+      </div>
     </ion-row>
   </div>
   <ion-text class="text">1. Βασικά Χαρακτηριστικά</ion-text>
-  <ion-row class="middelRow">
+  <div style="margin-top:10px">
+    <ion-row class="middelRow">
+      <ion-col>
+        <ion-label>Εμβαδόν <span>*</span></ion-label>
+        <div class="input-text">π.χ. 100
+          <div style="color:rgba(0, 0, 0, 1)">τ.μ.</div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-label>Όροφος <span>*</span></ion-label>
+        <ion-item lines="none" >
+          <ion-label style="margin:0px; margin-bottom:10px;" >Επιλέξτε Όροφο</ion-label>
+          <ion-select name="month" style="padding:0px;margin-bottom:15px">
+            <ion-select-option value="1">1</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-text class="text">Είναι κάτι από τα παρακάτω; <span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε αν
+      ισχύει)</span></ion-text>
+  <ion-row class="upperRow">
+    <ion-checkbox checked="true"></ion-checkbox>
     <ion-col>
-      <ion-label >Εμβαδόν <span>*</span></ion-label>
-      <ion-input placeholder="π.χ. 100             τ.μ."></ion-input>
+      <ion-label>Δώμα</ion-label>
     </ion-col>
+    <ion-checkbox checked="true"></ion-checkbox>
     <ion-col>
-      <ion-label >Όροφος <span>*</span></ion-label>
-      <ion-input placeholder="Επιλέξτε Όροφο"></ion-input>
+      <ion-label>Ρετιρέ</ion-label>
+    </ion-col>
+    <ion-checkbox checked="true"></ion-checkbox>
+    <ion-col>
+      <ion-label>Οροφοδιαμέρισμα</ion-label>
     </ion-col>
   </ion-row>
-  <ion-text class="text">Είναι κάτι από τα παρακάτω; <span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε αν ισχύει)</span></ion-text>
- <ion-row class="upperRow">
-  <ion-checkbox checked="true"></ion-checkbox>
-  <ion-col>
-    <ion-label>Δώμα</ion-label>
-  </ion-col>
-  <ion-checkbox checked="true"></ion-checkbox>
-  <ion-col>
-    <ion-label>Ρετιρέ</ion-label>
-  </ion-col>
-  <ion-checkbox checked="true"></ion-checkbox>
-  <ion-col>
-    <ion-label>Οροφοδιαμέρισμα</ion-label>
-  </ion-col>
- </ion-row>
- <ion-row class="middelRow">
-   <ion-col>
-    <ion-label >Έτος Κατασκευής<span>*</span></ion-label>
-    <ion-input placeholder="π.χ. 2022"></ion-input>
-  </ion-col>
-  <ion-col>
-    <ion-label >Έτος Ανακαίνισης </ion-label>
-    <ion-input placeholder="π.χ. 2022"></ion-input>
-  </ion-col>
-</ion-row>
-<ion-text class="text">Κατάσταση Ακινήτου<span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε ένα)</span></ion-text>
-<ion-row class="middelRow">
-  <ion-col>
-    <ion-input placeholder="Εξαιρετική"></ion-input>
-  </ion-col>
-  <ion-col>
-      <ion-input placeholder="Αρκετά καλή"></ion-input>
-  </ion-col>
-  <ion-col>
+  <ion-row class="middelRow">
+    <ion-col>
+      <ion-label>Έτος Κατασκευής<span>*</span></ion-label>
+      <ion-input placeholder="π.χ. 2022"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-label>Έτος Ανακαίνισης </ion-label>
+      <ion-input placeholder="π.χ. 2022"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-text class="text">Κατάσταση Ακινήτου<span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε ένα)</span></ion-text>
+  <ion-row class="leftCenter">
+    <ion-col>
+      <ion-input placeholder="Εξαιρετική"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input placeholder="Αρκετά καλή" style="background:#10F3C0; border:none"></ion-input>
+    </ion-col>
+    <ion-col>
       <ion-input placeholder="Καλή"></ion-input>
-  </ion-col>
-  <ion-col>
-    <ion-input placeholder="Μέτρια"></ion-input>
-  </ion-col>
-</ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-input placeholder="Μέτρια"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row style="margin: 0px 1rem;">
+    <ion-col size="6">
+      <div class="QtyCol">
+        <ion-text>Επίπεδα Ακινήτου</ion-text>
+        <div class="QtyInDes">
+          <ion-icon name="remove-outline"></ion-icon>
+          <ion-label>1</ion-label>
+          <ion-icon name="add-outline"></ion-icon>
+        </div>
+      </div>
+      
+    </ion-col>
+    <ion-col size="6">
+      <div class="QtyCol">
+        <ion-text>Υπνοδωμάτια</ion-text>
+        <div class="QtyInDes">
+          <ion-icon name="remove-outline"></ion-icon>
+          <ion-label>1</ion-label>
+          <ion-icon name="add-outline"></ion-icon>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row style="margin: 0px 1rem;">
+    <ion-col size="6">
+      <div class="QtyCol">
+        <ion-text>Τουαλέτες (WC)</ion-text>
+        <div class="QtyInDes">
+          <ion-icon name="remove-outline"></ion-icon>
+          <ion-label>1</ion-label>
+          <ion-icon name="add-outline"></ion-icon>
+        </div>
+      </div> 
+    </ion-col>
+    <ion-col size="6">
+      <div class="QtyCol">
+        <ion-text>Μπάνια</ion-text>
+        <div class="QtyInDes">
+          <ion-icon name="remove-outline"></ion-icon>
+          <ion-label>1</ion-label>
+          <ion-icon name="add-outline"></ion-icon>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-label style="padding-left:1rem;color:#000000; font-size: 11px;">Πόσο φωτεινό είναι το ακίνητο;</ion-label>
+  <ion-row class="middelRow" style="margin:0px 8px">
+    <ion-col style="padding:0px 3px" class="ion-text-center">
+      <ion-input placeholder="Πολύ φωτεινό" style="--placeholder-color:#1B2E4A"></ion-input>
+    </ion-col>
+    <ion-col style="padding:0px 3px"  class="ion-text-center">
+      <ion-input placeholder="Αρκετά φωτεινό" style="--placeholder-color:#1B2E4A"></ion-input>
+    </ion-col>
+    <ion-col style="padding:0px 3px"  class="ion-text-center">
+      <ion-input placeholder="Μέτρια φωτεινό" style="--placeholder-color:#1B2E4A;background: #10F3C0; border:none"></ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="margin:6px 1rem;justify-content:space-between; font-size:11px;">
+    <ion-label style="font-size:11px; font-weight:400;color:#000000;">Διαθέτει μπαλκόνι ή βεράντα;</ion-label>
+    <ion-label style="font-size:11px; font-weight:400;color:#000000;">Προσανατολισμός</ion-label>
+  </ion-row>
+
+  <ion-row class="smallText">
+    <div>Μπαλκόνι</div>
+    <div style="background: #10F3C0; border:none">Βεράντα</div>
+  </ion-row>
+  <div class="input">π.χ. 100
+    <div style="color:rgba(0, 0, 0, 1)">τ.μ.</div>
+  </div>
+
+  <div class="upperText">Έχει θέα;
+    <div>(Επιλέξτε έως 3)</div>
+  </div>
+
+  <div class="leftDiv">
+    <div>Όχι</div>
+    <div style="background:#10F3C0;border:none;">Ανοιχτωσιά</div>
+    <div style="background:#10F3C0;border:none;">Ορίζοντας</div>
+    <div style="background:#10F3C0;border:none;">Πανοραμική</div>
+  </div>
+  <div class="leftDiv" id="border">
+    <div id="width">Θάλασσα</div>
+    <div id="width">Βουνό</div>
+    <div id="width">Πάρκο</div>
+  </div>
+  <ion-text class="text">2. Θέρμανση και Ψύξη <span>*</span></ion-text>
+  <ion-row class="middelRow">
+    <ion-col style="padding:0px 3px" class="ion-text-center">
+      <ion-input placeholder="Δεν Διαθέτει" style="--placeholder-color:#1B2E4A"></ion-input>
+    </ion-col>
+    <ion-col style="padding:0px 3px" class="ion-text-center">
+      <ion-input placeholder="Αυτόνομη" style="--placeholder-color:#1B2E4A"></ion-input>
+    </ion-col>
+    <ion-col style="padding:0px 3px" class="ion-text-center">
+      <ion-input placeholder="Κεντρική" style="--placeholder-color:#1B2E4A"></ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-text class="text">Πιο συγκεκριμένα έχει θέρμανση με <span style="color:rgba(129, 129, 129, 1)">... (Επιλέξτε
+      ένα)</span></ion-text>
+  <ion-row class="leftCenter">
+    <ion-col>
+      <ion-input placeholder="Πετρέλαιο"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input placeholder="Φυσικό Αέριο"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input placeholder="Αντλία Θερμότητας"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row class="leftCenter">
+    <ion-col>
+      <ion-input placeholder="Ηλεκτρική" id="inputFiled"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-text class="text">Έχει κάποιο από τα παρακάτω; <span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε όσα
+      ισχύουν)</span></ion-text>
+  <ion-row class="upperRow">
+    <ion-col size="3" id="colum">
+      <ion-checkbox checked="true"></ion-checkbox>
+      <ion-label style="font-size:11px">Τζάκι</ion-label>
+    </ion-col>
+    <ion-col size="6" id="colum">
+      <ion-checkbox checked="true"></ion-checkbox>
+      <ion-label>Ηλιακός Θερμοσύφωνας</ion-label>
+    </ion-col>
+    <ion-col size="3" id="colum">
+      <ion-checkbox checked="true"></ion-checkbox>
+      <ion-label>Κλιματιστικά</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-text class="text">Ενεργειακή Κλάση</ion-text>
+  <div style="margin:7px 1rem">
+    <ion-item lines="none" >
+      <ion-label style="margin: 0px; margin-bottom: 10px;" >Επιλέξτε Όροφο</ion-label>
+      <ion-select name="month" style="padding:0px;margin-bottom:15px">
+        <ion-select-option value="1">1</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <div class="border"></div>
+  <ion-text class="text">3. Επιπρόσθετα Στοιχεία</ion-text><br>
+  <ion-text class="text">Έχει κάποιο από τα παρακάτω;<span style="color:rgba(129, 129, 129, 1)"> (Επιλέξτε όσα
+      ισχύουν)</span></ion-text>
+  <ion-row class="upperRow">
+    <ion-col>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Επιπλωμένο </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Ηλεκτρικές συσκευές </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Πόρτα Ασφαλείας </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Σύστημα Συναγερμού </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Αποθηκευτικός χώρος</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Σοφίτα</ion-label>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Τέντες </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Smart Home</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Κήπος</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Πισίνα</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Εσωτερική Πισίνα</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Sauna/Jacuzzi</ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-text class="text">Κουφώματα <span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε από τα παρακάτω)</span>
+  </ion-text>
+  <ion-row class="leftCenter">
+    <ion-col>
+      <ion-input placeholder="Ξύλινα"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input placeholder="Μονά Αλουμινίου"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input placeholder="Διπλά Αλουμινίου"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row class="leftCenter">
+    <ion-col>
+      <ion-input placeholder="Συνθετικά" id="inputFiled" style="background: none"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-text class="text">Πάτωμα <span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε από τα παρακάτω)</span></ion-text>
+  <ion-row class="middelRow">
+    <ion-col class="ion-text-center">
+      <ion-label>Έτος Κατασκευής<span>*</span></ion-label>
+      <ion-input placeholder="Πλακάκια" id="input-margin"></ion-input>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <ion-label>Έτος Ανακαίνισης </ion-label>
+      <ion-input placeholder="Μωσαϊκό" id="input-margin"></ion-input>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <ion-label>Έτος Ανακαίνισης </ion-label>
+      <ion-input placeholder="Μάρμαρο" id="input-margin"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row class="middelRow">
+    <ion-col class="ion-text-center">
+      <ion-input placeholder="Πλακάκια" id="input-margin"></ion-input>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <ion-input placeholder="Μωσαϊκό" id="input-margin"></ion-input>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <ion-input placeholder="Μάρμαρο" id="input-margin"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row class="upperRow">
+    <ion-text class="text" style="padding:0px">Πάτωμα</ion-text>
+    <ion-input style="margin:10px 6px"></ion-input>
+  </ion-row>
+  <ion-text class="text">Έχει κάποιο από τα παρακάτω; <span style="color:rgba(129, 129, 129, 1)"> (Επιλέξτε όσα
+      ισχύουν)</span></ion-text>
+  <ion-row class="upperRow">
+    <ion-col>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Ασανσέρ </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size"> Αποθήκη </ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Θυροτηλεόραση</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Πάρκινγκ</ion-label>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Διαμπερές</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">SΓωνιακό</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Προσόψεως</ion-label>
+      </div>
+      <div>
+        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-label id="font-size">Εσωτερικό</ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row style="margin: 0px 1rem; display:flex;align-items:center">
+    <ion-col size="9">
+      <ion-text style="margin-right:2rem;font-size: 12px;">Συνολικός Αριθμός Ορόφων του Ακινήτου</ion-text>
+    </ion-col>
+    <ion-col size="3"  style="display:flex;align-items:center; justify-content:end">
+      <div  class="bottomQty">
+        <ion-icon name="remove-outline"></ion-icon>
+        <ion-label>1</ion-label>
+        <ion-icon name="add-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row  style="margin: 0px 1rem; display:flex;align-items:center">
+    <ion-col size="9">
+      <ion-text style="margin-right:2rem;font-size: 12px;">Συνολικός Αριθμός Ορόφων του Ακινήτου</ion-text>
+    </ion-col>
+    <ion-col size="3" style="display:flex;align-items:center; justify-content:end">
+      <div  class="bottomQty borderUndeline">
+        <ion-icon name="remove-outline"></ion-icon>
+        <ion-label>1</ion-label>
+        <ion-icon name="add-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row
+    style="margin-left: 1rem; margin-right:1.5rem;justify-content:space-between; font-size:11px; margin-top:10px">
+    <ion-label style="font-size:13px; font-weight:400;color:#000000;">Διαθέτει μπαλκόνι ή βεράντα;</ion-label>
+    <ion-label style="font-size:13px; font-weight:400;color:#000000;">1</ion-label>
+  </ion-row>
+  <div class="upperText">Κατάσταση Κτηρίου
+    <div>(Επιλέξτε ένα)</div>
+  </div>
+
+  <div class="leftDiv">
+    <div>Εξαιρετική</div>
+    <div style="background:#10F3C0;border:none;" id="width-div">Αρκετά καλή</div>
+    <div>Καλή</div>
+    <div>Μέτρια</div>
+  </div>
+  <div class="text-bottom">
+    <p>Next Step <ion-icon name="chevron-forward-outline"></ion-icon>
+    </p>
+  </div>
+
+  <ion-footer>
+    <div class="footer">
+      <ion-icon name="chevron-up-outline"></ion-icon>Back to top
+    </div>
+  </ion-footer>
 </ion-content>

@@ -1,9 +1,46 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>homexpress</ion-title>
+    <div class="Header" style="margin:0px 1rem">
+      <img src="./assets/icon/home.png">
+    <div style="display:flex">
+      <div class="notification">
+        <ion-icon name="notifications-outline" style="font-size:4vh;"></ion-icon>
+          <div class="indicate">
+          <div class="icon"></div>
+          </div>
+        </div>
+        <ion-icon name="ellipsis-vertical-outline" style="font-size:4vh"></ion-icon>
+    </div>
+  </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="ion-text-center" style="margin-top:2rem">
+    <h2>Welcome to Homexpress, your<br> property match-making tool</h2>
+    <ion-label>To get started, choose one of the following:</ion-label>
+  </div>
+  <div class="mainDiv">
+    <ion-text >I have a property...</ion-text>
+  </div>
+  <ion-card>
+    <img src="./assets/icon/cardIcon.png">
+    <ion-row class="mainRow">
+      <ion-icon name="add-outline"></ion-icon>
+      <p  routerLink="/tabs/addnewproperty">Add New Property</p>
+    </ion-row>  
+  </ion-card>
+  <div class="mainDiv">
+    <ion-text >I have a property...</ion-text>
+  </div>
+  <ion-card>
+    <img src="./assets/icon/searchIcon.png">
+    <ion-row class="mainRow">
+      <ion-icon name="add-outline"></ion-icon>
+      <p  routerLink="/tabs/mydemands">Add New Demand</p>
+    </ion-row>  
+  </ion-card>
+  <div style="height:10vh">
+  </div>
+  
 </ion-content>
