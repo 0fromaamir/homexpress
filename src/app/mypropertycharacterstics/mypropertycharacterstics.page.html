@@ -2,7 +2,6 @@
   <ion-toolbar>
     <div class="header">
       <ion-icon name="chevron-back-outline" style="padding:0px"></ion-icon>
-      <p>Back to Demand</p>
     </div>
     <ion-icon name="ellipsis-vertical-outline" slot="end"></ion-icon>
   </ion-toolbar>
@@ -95,101 +94,116 @@
 </ion-row>
 <div class="background">
 <ion-row>
-  <ion-col>
-    <h1>Characteristics</h1>
-  </ion-col>
-  <ion-col>
-    <h2>Location</h2>
-  </ion-col>
-  <ion-col>
-    <h2>Details</h2>
-  </ion-col>
-</ion-row>
-<ion-row>
-  <ion-col style="background: rgba(16, 243, 192, 1)"></ion-col>
-  <ion-col  style="background:rgba(27, 46, 74, 1)"></ion-col>
-  <ion-col  style="background:rgba(27, 46, 74, 1)"></ion-col>
-</ion-row>
-<ion-card class="secondCard">
-  <ion-row>
-    <ion-col>
-        <ion-label>Τύπος ιδιοκτησίας: Έτος </ion-label><br>
-        <ion-label>Έτος κατασκευής:</ion-label><br>
-        <ion-label>Υπνοδωμάτια:</ion-label><br>
-        <ion-label> Τουαλέτες:</ion-label><br>
-        <ion-label> Βεράντα:</ion-label>
-    </ion-col>
-    <ion-col>
-        <ion-label>Όροφος:</ion-label><br>
-        <ion-label>Εμβαδόν: </ion-label><br>
-        <ion-label>Μπάνια:</ion-label><br>
-        <ion-label>Θέσειςστάθμευσης:</ion-label><br>
-        <ion-label>Προσανατολισμός:</ion-label>
-    </ion-col>
-  </ion-row>
-</ion-card>
-<div class="card-btn"> 
-  <div ><ion-icon name="remove-outline"></ion-icon><ion-label> Περισσότερα Χαρακτηριστικά</ion-label></div>
- </div> 
-<ion-card class="third-card" >
-  <ion-row class="upperRow">
-    <ion-col>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text>Οροφοδιαμέρισμα</ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text>  Γωνιακό</ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text> Εσωτερικό <span>Κουφώματα:</span></ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text>Ασανσέρ</ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text> Θυροτηλεόραση</ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text> Ηλεκτρικές,συσκευές</ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text> Κήπος </ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text>Smart home</ion-text><br>
-          <ion-checkbox checked="true"></ion-checkbox>
-          <ion-text>Αποθηκευτικός χώρος</ion-text><br>
-    </ion-col>
-    <ion-col >
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text>Πολύ φωτεινό</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text>  Διαμπερές</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text>Προσόψεως<br> Πάτωμα:</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text>Αποθήκη</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text>Επιπλωμένο</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text> Πόρτα ασφαλείας</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text> Πισίνα</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text> Sauna/Jacuzzi</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text>Τέντες</ion-text><br>
-        <ion-checkbox checked="true"></ion-checkbox>
-        <ion-text> Εσωτερική πισίνα</ion-text><br>
-  </ion-col>
-  </ion-row>
-</ion-card>
-  <div class="last-div">
-  <div class="btn-1">
-    <ion-icon name="add-outline"></ion-icon>
-    <ion-label>Επιλογές θέρμανσης & ψύξης</ion-label>
+  <ion-segment [(ngModel)]="segment" mode="md">
+    <ion-segment-button value="1" >
+      <h2>Characteristics</h2>
+    </ion-segment-button>
+    <ion-segment-button value="2" >
+      <h1>Location</h1>
+    </ion-segment-button>
+    <ion-segment-button value="3">
+      <h1>Details</h1>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="segment" >
+    <div *ngSwitchCase="1">
+      <ion-card class="secondCard">
+        <ion-row>
+          <ion-col>
+              <ion-label>Τύπος ιδιοκτησίας: Έτος </ion-label><br>
+              <ion-label>Έτος κατασκευής:</ion-label><br>
+              <ion-label>Υπνοδωμάτια:</ion-label><br>
+              <ion-label> Τουαλέτες:</ion-label><br>
+              <ion-label> Βεράντα:</ion-label>
+          </ion-col>
+          <ion-col>
+              <ion-label>Όροφος:</ion-label><br>
+              <ion-label>Εμβαδόν: </ion-label><br>
+              <ion-label>Μπάνια:</ion-label><br>
+              <ion-label>Θέσειςστάθμευσης:</ion-label><br>
+              <ion-label>Προσανατολισμός:</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <div class="card-btn"> 
+        <div ><ion-icon name="remove-outline"></ion-icon><ion-label> Περισσότερα Χαρακτηριστικά</ion-label></div>
+       </div> 
+      <ion-card class="third-card" >
+        <ion-row class="upperRow">
+          <ion-col>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text>Οροφοδιαμέρισμα</ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text>  Γωνιακό</ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text> Εσωτερικό <span>Κουφώματα:</span></ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text>Ασανσέρ</ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text> Θυροτηλεόραση</ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text> Ηλεκτρικές,συσκευές</ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text> Κήπος </ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text>Smart home</ion-text><br>
+                <ion-checkbox checked="true"></ion-checkbox>
+                <ion-text>Αποθηκευτικός χώρος</ion-text><br>
+          </ion-col>
+          <ion-col >
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text>Πολύ φωτεινό</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text>  Διαμπερές</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text>Προσόψεως<br> Πάτωμα:</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text>Αποθήκη</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text>Επιπλωμένο</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text> Πόρτα ασφαλείας</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text> Πισίνα</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text> Sauna/Jacuzzi</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text>Τέντες</ion-text><br>
+              <ion-checkbox checked="true"></ion-checkbox>
+              <ion-text> Εσωτερική πισίνα</ion-text><br>
+        </ion-col>
+        </ion-row>
+      </ion-card>
+        <div class="last-div">
+        <div class="btn-1">
+          <ion-icon name="add-outline"></ion-icon>
+          <ion-label>Επιλογές θέρμανσης & ψύξης</ion-label>
+        </div>
+        <div class="btn-1">
+          <ion-icon name="add-outline"></ion-icon>
+          <ion-label>Κτίριο</ion-label>
+        </div>
+      </div>
+      <div class="footer">
+        <ion-label>
+          <ion-icon name="chevron-up-outline"></ion-icon>Back to top</ion-label>
+      </div>
+    </div>
+    <div *ngSwitchCase="2">
+      <div style="display:flex;align-items:center;margin-bottom: 1rem;">
+        <img src="./assets/icon/image 4.png">
+        <ion-text style="padding-left:5px">Area, City</ion-text>
+      </div>
+      <div style="margin-bottom:3rem">
+        <img src="./assets/icon/map.png" alt="" style="width:100vw" >
+      <ion-text>Lorem ipsum ..... </ion-text>
+      </div>
+    </div>
+    <div *ngSwitchCase="3">
+      <ion-card class="fourthCard">Lorem ipsum .....</ion-card>
+    </div>
   </div>
-  <div class="btn-1">
-    <ion-icon name="add-outline"></ion-icon>
-    <ion-label>Κτίριο</ion-label>
-  </div>
-</div>
-<div class="footer">
-  <ion-label>
-    <ion-icon name="chevron-up-outline"></ion-icon>Back to top</ion-label>
-</div>
+</ion-row>
+
 </div>
 </ion-content>

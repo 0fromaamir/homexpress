@@ -1,0 +1,162 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="Header">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        <ion-label>Save</ion-label>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainDiv">
+    <h2>Add New Property</h2>
+    <ion-label>Add a new property in 4 easy steps (tap to fill in)</ion-label>
+  </div>
+  <ion-text>1. Βασικά Κριτήρια</ion-text><br>
+  <ion-text>Ακίνητο για...</ion-text>
+  <ion-row class="chipRow">
+    <ion-col style="background: #10F3C0;">
+      <ion-label style="color:white">Αγορά</ion-label>
+    </ion-col>
+    <ion-col>
+      <ion-label>Ενοικίαση</ion-label>
+    </ion-col>
+    <ion-col>
+      <ion-label>Και τα δύο</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-text>Price Range € - Αγορά</ion-text>
+  <ion-row class="firstRow">
+    <ion-col class="ion-no-padding">
+      <ion-input placeholder="Minimum"></ion-input>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <div>
+        <ion-label>έως</ion-label>
+        <ion-input placeholder="Minimum"></ion-input>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-text>Price Range € - Ενοίκιο</ion-text>
+  <ion-row class="firstRow">
+    <ion-col class="ion-no-padding">
+      <ion-input placeholder="Minimum"></ion-input>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <div>
+        <ion-label>έως</ion-label>
+        <ion-input placeholder="Minimum"></ion-input>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-text>Περιοχή</ion-text>
+  <div class="box">
+    <ion-searchbar mode="md" placeholder="Πληκτρολογήστε Οδό και Περιοχή"></ion-searchbar>
+    <img src="./assets/icon/image 5.png">
+  </div>
+  <ion-row class="middelRow">
+    <ion-col size="6">
+      <ion-label>Τύπος Ακινήτου<span>*</span></ion-label>
+      <ion-item lines="none">
+        <ion-label style="margin:0px; margin-bottom:10px; color:#818181;">Επιλέξτε Όσα Ισχύουν</ion-label>
+        <ion-select name="month" style="padding:0px;margin-bottom:15px">
+          <ion-select-option value="1">1</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label>Έτος Κατασκευής<span>*</span></ion-label>
+      <ion-item lines="none">
+        <ion-label style="margin:0px; margin-bottom:10px; color:#818181;">π.χ. 2022</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="middelRow">
+    <ion-col size="6">
+      <ion-label>Εμβαδόν<span>*</span></ion-label>
+      <ion-item lines="none">
+        <ion-label style="margin:0px; margin-bottom:10px; color:#818181;">π.χ. 100</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label>Όροφος<span>*</span></ion-label>
+      <ion-item lines="none">
+        <ion-label style="margin:0px; margin-bottom:10px; color:#818181;">π.χ. 1</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <div class="ion-text-center">
+        <ion-text style="margin:0px">Επίπεδα Ακινήτου</ion-text>
+        <div class="mainBox">
+          <div>Min</div>
+          <ion-label>έως</ion-label>
+          <div>Max</div>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="ion-text-center">
+        <ion-text style="margin:0px">Υπνοδωμάτια</ion-text>
+        <div class="mainBox">
+          <div>Min</div>
+          <ion-label>έως</ion-label>
+          <div>Max</div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <div class="ion-text-center">
+        <ion-text style="margin:0px">Τουαλέτες (WC)</ion-text>
+        <div class="mainBox">
+          <div>Min</div>
+          <ion-label>έως</ion-label>
+          <div>Max</div>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="ion-text-center">
+        <ion-text style="margin:0px">Μπάνια</ion-text>
+        <div class="mainBox">
+          <div>Min</div>
+          <ion-label>έως</ion-label>
+          <div>Max</div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="thirdRow" style="margin:0px 1rem">
+    <ion-col size="6" class="ion-text-center">
+      <ion-label>Κατάσταση Ακινήτου <span>*</span></ion-label>
+      <ion-input placeholder="Μόνο Αριθμοί" style="--placeholder-color:#818181;"></ion-input>
+    </ion-col>
+    <ion-col size="3" class="ion-text-center">
+      <ion-label>Θέρμανση <span>*</span></ion-label>
+      <ion-input placeholder="Αυτόνομη"></ion-input>
+    </ion-col>
+    <ion-col size="3" style="padding-top:27px;" class="ion-text-center">
+      <ion-input placeholder="Κεντρική" style="background:#10F3C0; border:none"></ion-input>
+    </ion-col>
+  </ion-row>
+  <div class="border"></div>
+  <ion-text>2. Περισσότερα Χαρακτηριστικά</ion-text>
+  <div class="ion-text-center">
+    <ion-button>
+      <ion-icon name="add-outline"></ion-icon> Περισσότερα Χαρακτηριστικά
+    </ion-button>
+  </div>
+  <div class="ion-text-end ion-margin-bottom">
+    <ion-text>Finish & View Demand</ion-text>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="footer">
+    <ion-icon name="chevron-up-outline"></ion-icon>Back to top
+  </div>
+</ion-footer>

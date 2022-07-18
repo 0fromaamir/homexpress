@@ -3,238 +3,458 @@
     <ion-title mode="ios">
       <img src="./assets/icon/home.png">
     </ion-title>
-      <ion-icon slot="end" name="ellipsis-vertical-outline"></ion-icon>    
+    <ion-icon slot="end" name="ellipsis-vertical-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-row class="text-Left">
     <h2>My Demands: <span>tap to manage</span></h2>
   </ion-row>
   <ion-row class="main-Row">
-    <ion-label>Matched</ion-label>
-    <ion-text>Pending</ion-text>
+    <ion-segment [(ngModel)]="segment" mode="md">
+      <ion-segment-button value="1" class="mt-2">
+        <ion-label>Matched</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="2" class="mt-2">
+        <ion-label>Pending</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="segment">
+      <div class="sort-text">
+        <p>sort</p>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div *ngSwitchCase="1">
+        <ion-row class="firstRow">
+          <ion-col size="6">
+            <small>NEW</small>
+            <ion-card routerLink="/tabs/mypropertycharacterstics">
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched</ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card routerLink="/tabs/mypropertycharacterstics">
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched</ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-card>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched </ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched </ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div *ngSwitchCase="2">
+        <ion-row class="firstRow" >
+          <ion-col size="6">
+            <small>NEW</small>
+            <ion-card  routerLink="/tabs/mypropertiescharacterstics">
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched</ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div> 
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched</ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row >
+          <ion-col size="6">
+            <ion-card>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched </ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>  
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text>Demand no. x</ion-text>
+                </div>
+                <div class="text">
+                  <ion-label style="color: #1B2E4A;">Matched </ion-label>
+                  <ion-checkbox checked="true"></ion-checkbox>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="text">
+                  <ion-text style="font-weight:400">#id</ion-text>
+                </div>
+                <div class="text">
+                  <h6>View matches </h6>
+                </div>
+              </div>
+              <p style="margin-top:5px">Area, City</p>
+              <h1>Property-availability</h1>
+              <ion-row class="mainRow">
+                <ion-label>Field area:<span> xxx m2</span></ion-label>
+                <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardcar.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon1.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="middelRow">
+                <ion-col>
+                  <img src="./assets/icon/cardicon3.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+                <ion-col>
+                  <img src="./assets/icon/cardicon4.png" alt="">
+                  <ion-label># - #</ion-label>
+                </ion-col>
+              </ion-row>
+              <div class="left">
+                <ion-label>View Demand</ion-label>
+                <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
+              </div>
+              <h2>Edit Demand</h2>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
   </ion-row>
-  <ion-row class="row-color">
-    <ion-col></ion-col>
-    <ion-col id="color"></ion-col>
-  </ion-row>
-  <div class="sort-text">
-    <p>sort</p>
-    <ion-icon name="chevron-down-outline"></ion-icon>
-  </div>
-  <ion-row style="margin:0px 1rem">
-    <ion-col size="6">
-      <small >NEW</small>
-      <ion-card>
-        <div class="d-flex">
-        <div class="text">
-          <ion-text>Demand no. x</ion-text>
-        </div>
-        <div class="text">
-          <ion-label style="color: #1B2E4A;">Matched</ion-label>
-          <ion-checkbox checked="true"></ion-checkbox>
-        </div>
-        </div>
-        <div class="d-flex">
-          <div class="text">
-            <ion-text style="font-weight:400">#id</ion-text>
-          </div>
-          <div class="text">
-            <h6>View matches </h6>
-          </div>
-          </div>
-          <p style="margin-top:5px">Area, City</p>
-          <h1>Property-availability</h1>
-          <ion-row class="mainRow">
-            <ion-label>Field area:<span> xxx m2</span></ion-label>
-            <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
-          </ion-row>
-          <ion-row  class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardcar.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon1.png" alt="">
-            <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <ion-row class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardicon3.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon4.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <div class="left">
-            <ion-label>View Demand</ion-label>
-            <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
-          </div>
-          <h2>Edit Demand</h2>
-      </ion-card>
-    </ion-col >
-    <ion-col size="6">
-      <ion-card>
-        <div class="d-flex">
-        <div class="text">
-          <ion-text>Demand no. x</ion-text>
-        </div>
-        <div class="text">
-          <ion-label style="color: #1B2E4A;">Matched </ion-label>
-          <ion-checkbox checked="true"></ion-checkbox>
-        </div>
-        </div>
-        <div class="d-flex">
-          <div class="text">
-            <ion-text style="font-weight:400">#id</ion-text>
-          </div>
-          <div class="text">
-            <h6>View matches </h6>
-          </div>
-          </div>
-          <p style="margin-top:5px">Area, City</p>
-          <h1>Property-availability</h1>
-          <ion-row class="mainRow">
-            <ion-label>Field area:<span> xxx m2</span></ion-label>
-            <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
-          </ion-row>
-          <ion-row  class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardcar.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon1.png" alt="">
-            <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <ion-row class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardicon3.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon4.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <div class="left">
-            <ion-label>View Demand</ion-label>
-            <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
-          </div>
-          <h2>Edit Demand</h2>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-  <ion-row  style="margin:0px 1rem">
-    <ion-col size="6">
-      <ion-card>
-        <div class="d-flex">
-        <div class="text">
-          <ion-text>Demand no. x</ion-text>
-        </div>
-        <div class="text">
-          <ion-label style="color: #1B2E4A;">Matched </ion-label>
-          <ion-checkbox checked="true"></ion-checkbox>
-        </div>
-        </div>
-        <div class="d-flex">
-          <div class="text">
-            <ion-text style="font-weight:400">#id</ion-text>
-          </div>
-          <div class="text">
-            <h6>View matches </h6>
-          </div>
-          </div>
-          <p style="margin-top:5px">Area, City</p>
-          <h1>Property-availability</h1>
-          <ion-row class="mainRow">
-            <ion-label>Field area:<span> xxx m2</span></ion-label>
-            <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
-          </ion-row>
-          <ion-row  class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardcar.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon1.png" alt="">
-            <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <ion-row class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardicon3.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon4.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <div class="left">
-            <ion-label>View Demand</ion-label>
-            <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
-          </div>
-          <h2>Edit Demand</h2>
-      </ion-card>
-    </ion-col >
-    <ion-col size="6">
-      <ion-card>
-        <div class="d-flex">
-        <div class="text">
-          <ion-text>Demand no. x</ion-text>
-        </div>
-        <div class="text">
-          <ion-label style="color: #1B2E4A;">Matched </ion-label>
-          <ion-checkbox checked="true"></ion-checkbox>
-        </div>
-        </div>
-        <div class="d-flex">
-          <div class="text">
-            <ion-text style="font-weight:400">#id</ion-text>
-          </div>
-          <div class="text">
-            <h6>View matches </h6>
-          </div>
-          </div>
-          <p style="margin-top:5px">Area, City</p>
-          <h1>Property-availability</h1>
-          <ion-row class="mainRow">
-            <ion-label>Field area:<span> xxx m2</span></ion-label>
-            <ion-label>TBC: <span> lorem ipsun 2</span></ion-label>
-          </ion-row>
-          <ion-row  class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardcar.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon1.png" alt="">
-            <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <ion-row class="middelRow">
-            <ion-col>
-              <img src="./assets/icon/cardicon3.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-            <ion-col>
-              <img src="./assets/icon/cardicon4.png" alt="">
-              <ion-label># - #</ion-label>
-            </ion-col>
-          </ion-row>
-          <div class="left">
-            <ion-label>View Demand</ion-label>
-            <h1 style="padding:0px">xx.xxx.xxx -<br>xx.xxx.xxx €</h1>
-          </div>
-          <h2>Edit Demand</h2>
-      </ion-card>
-    </ion-col>
-  </ion-row>
- <h4>View All</h4>
+  <h4>View All</h4>
 </ion-content>

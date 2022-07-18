@@ -8,18 +8,6 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
-      },
-      {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
-      },
-      {
         path: 'proplan',
         loadChildren: () => import('../proplan/proplan.module').then( m => m.ProplanPageModule)
       },
@@ -36,10 +24,6 @@ const routes: Routes = [
         loadChildren: () => import('../myproperties/myproperties.module').then( m => m.MypropertiesPageModule)
       },
       {
-        path: 'mymatches',
-        loadChildren: () => import('../mymatches/mymatches.module').then( m => m.MymatchesPageModule)
-      },
-      {
         path: 'mypropertycharacterstics',
         loadChildren: () => import('../mypropertycharacterstics/mypropertycharacterstics.module').then( m => m.MypropertycharactersticsPageModule)
       },
@@ -50,6 +34,30 @@ const routes: Routes = [
       {
         path: 'mymatches2',
         loadChildren: () => import('../mymatches2/mymatches2.module').then( m => m.Mymatches2PageModule)
+      },
+      {
+        path: 'myprofile',
+        loadChildren: () => import('../myprofile/myprofile.module').then( m => m.MyprofilePageModule)
+      },
+      {
+        path: 'mypropertieschat',
+        loadChildren: () => import('../mypropertieschat/mypropertieschat.module').then( m => m.MypropertieschatPageModule)
+      },
+      {
+        path: 'addnewpropertylocation',
+        loadChildren: () => import('../addnewpropertylocation/addnewpropertylocation.module').then( m => m.AddnewpropertylocationPageModule)
+      },
+      {
+        path: 'addnewpropertyprice',
+        loadChildren: () => import('../addnewpropertyprice/addnewpropertyprice.module').then( m => m.AddnewpropertypricePageModule)
+      },
+      {
+        path: 'addnewpropertymedia',
+        loadChildren: () => import('../addnewpropertymedia/addnewpropertymedia.module').then( m => m.AddnewpropertymediaPageModule)
+      },
+      {
+        path: 'addnewdemand',
+        loadChildren: () => import('../addnewdemand/addnewdemand.module').then( m => m.AddnewdemandPageModule)
       },
       {
         path: '',

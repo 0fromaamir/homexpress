@@ -2,21 +2,17 @@ ion-toolbar {
     padding: 10px;
     max-height: 3rem;
     text-align: center;
-
     ion-icon {
         color: #000000;
     }
 }
-
 ion-content {
     .text-Left {
         margin: 5px 1rem;
-
         h2 {
             font-size: 13px;
             font-weight: 700;
             color: #1B2E4A;
-
             span {
                 font-size: 12px;
                 font-weight: 400;
@@ -25,58 +21,48 @@ ion-content {
             }
         }
     }
-
     .main-Row {
         margin: 0px 1rem;
         justify-content: space-between;
-
         ion-label {
-            font-size: 16px;
+            font-size: 11px;
             font-weight: 700;
             color: #1B2E4A;
         }
-
         ion-text {
-            font-size: 17px;
+            font-size: 11px;
             font-weight: 400;
             color: #1B2E4A;
         }
     }
-
     .row-color {
         margin: 0px 1rem;
-
         ion-col {
             background: #10F3C0;
             padding: 2px;
             border-radius: 50px;
         }
-
         #color {
             background: #1B2E4A;
             padding: 2px;
         }
     }
-
     .sort-text {
         display: flex;
         align-items: center;
-        margin: 14px 1rem;
-
+        margin: 16px 1rem;
         p {
             margin: 0px;
             font-size: 12px;
             font-weight: 700;
             color: #141414;
         }
-
         ion-icon {
             font-size: 10px;
             padding-left: 3px;
             color: rgba(20, 20, 20, 1);
         }
     }
-
     small{
         background: #FFB800;
         border-radius: 20px;
@@ -91,33 +77,25 @@ ion-content {
         z-index: 9999;
         right: 12px;
     }
-
     ion-card {
         background: #FFFFFF;
-        height: 27vh;
-        width: auto;
         margin: 16px 1rem;
         border-radius: 5px;
-
         ion-row {
             margin: 0px 1rem;
             align-items: center;
             justify-content: space-between;
         }
-
         ion-label {
             font-size: 11px;
             font-weight: 700;
             color: #818181;
-
         }
-
         ion-text {
             font-size: 11px;
             font-weight: 700;
             color: rgba(27, 46, 74, 1);
         }
-
         ion-checkbox {
             height: 15px;
             width: 15px;
@@ -128,14 +106,12 @@ ion-content {
             margin-left: 5px;
         }
     }
-
     .div-color {
         height: 88px;
         width: 154px;
         background: #D9D9D9;
         margin-left: 1rem;
     }
-
     .middelRow {
         ion-col {
             background: rgba(16, 243, 192, 0.2);
@@ -145,7 +121,6 @@ ion-content {
             align-items: center;
             margin-right: 3px;
         }
-
         img {
             height: 10px;
             width: 12px;
@@ -154,7 +129,6 @@ ion-content {
 
         }
     }
-
     .area {
         padding-left: 10px;
         h3 {
@@ -180,14 +154,12 @@ ion-content {
 
         }
     }
-
     .border {
         border: 1px solid;
         padding: 2px 11px;
         background: rgba(16, 243, 192, 0.2);
         border-radius: 6px;
     }
-
     p {
         font-style: normal;
         font-weight: 400;
@@ -197,7 +169,6 @@ ion-content {
         margin: 0px;
         margin-right: 1rem;
     }
-
     .upperRow {
         h2 {
             font-size: 15px;
@@ -205,7 +176,6 @@ ion-content {
             color: #000000;
             margin: 0px;
         }
-
         h1 {
             font-size: 11px;
             font-weight: 400;
@@ -215,11 +185,9 @@ ion-content {
             text-decoration: underline;
         }
     }
-
     .footerRow {
         margin: 18px 1rem;
         justify-content: space-between;
-
         h1 {
             font-size: 13px;
             font-weight: 400;
@@ -227,15 +195,25 @@ ion-content {
             margin: 0px;
             text-decoration: underline;
         }
-
         ion-text {
             font-size: 10px;
             color: #818181;
         }
-
         ion-icon {
-            // vertical-align: bottom;
             padding-right: 4px;
         }
     }
+    ion-segment-button{
+        --color-checked:rgba(16, 243, 192, 1);
+    }
+    @media screen and (width:280px) {
+        ion-card{
+            margin: 10px 0px;
+        }
+        } 
+        @media screen and (min-width:600px)and (max-width:1300px) {
+            ion-card{
+                width:92vw;
+            }
+        }
 }

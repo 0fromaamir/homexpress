@@ -1,0 +1,149 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="Header">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        <ion-label>Save</ion-label>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainDiv">
+    <h2>Add New Property</h2>
+    <ion-label>Add a new property in 4 easy steps (tap to fill in)</ion-label>
+  </div>
+  <div class="middelDiv">
+    <ion-row>
+      <p>Step 1/4 - Characteristics</p>
+      <div class="check-box-div"  style="background: #10F3C0; border:none">
+      <ion-checkbox checked="true" style=" margin:0px;--background-checked:#10F3C0;
+      --border-color-checked:#10F3C0; --checkmark-color: white;" ></ion-checkbox>
+      </div>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 2/4 - Location</p>
+      <div class="check-box-div"  style="background: #10F3C0;; border:none">
+        <ion-checkbox checked="true" style=" margin:0px;--background-checked:#10F3C0;;
+        --border-color-checked:#10F3C0;; --checkmark-color: white;" ></ion-checkbox>
+        </div>
+    </ion-row>
+    <ion-row class="mainRow">
+      <h3>Step 3/4 - Price and Availabilitys</h3>
+      <div  class="check-box-div"  style="background: #FFB800; border:none">
+        <ion-checkbox checked="true" class="custom-check-box"  style=" margin:0px;--background-checked:#FFB800;
+        --border-color-checked:#FFB800; --checkmark-color: white;"></ion-checkbox>
+      </div>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 4/4 - Media</p>
+      <div  class="check-box-div">
+        <ion-checkbox checked="true" class="custom-check-box"></ion-checkbox>
+      </div>
+    </ion-row>
+  </div>
+  <div class="border"></div>
+  <div class="middelDiv">
+    <ion-text>1. Διάθεση <span>(Επιλέξτε ένα)</span></ion-text>
+    <ion-row class="secondRow">
+      <ion-col size="4">
+        <ion-input placeholder="Ενοικίαση"></ion-input>
+      </ion-col>
+      <ion-col size="4">
+        <ion-input  placeholder="Πώληση"></ion-input>
+      </ion-col>
+      <ion-col size="4">
+        <ion-input  placeholder="Και τα δύο"></ion-input>
+      </ion-col>
+    </ion-row>
+    <div class="border"></div>
+    <ion-text>1. Τιμή Διάθεσης <span style="color:red">*</span></ion-text>
+    <ion-row class="thirdRow" style="margin:0px 1rem">
+      <ion-col size="6">
+        <ion-label>Τιμή Ενοικίου €</ion-label>
+        <ion-input placeholder="Μόνο Αριθμοί" style="--placeholder-color:#818181;"></ion-input>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <ion-label>Συζητήσιμη €</ion-label>
+        <ion-input placeholder="Ναι"></ion-input>
+      </ion-col>
+      <ion-col size="3" style="padding-top:27px" class="ion-text-center">
+        <ion-input placeholder="Όχι" style="background: #10F3C0;"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="thirdRow" style="margin:0px 1rem">
+      <ion-col size="6">
+        <ion-label>Τιμή Ενοικίου €</ion-label>
+        <ion-input placeholder="Μόνο Αριθμοί" style="--placeholder-color:#818181;"></ion-input>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <ion-label>Συζητήσιμη €</ion-label>
+        <ion-input placeholder="Ναι"></ion-input>
+      </ion-col>
+      <ion-col size="3" style="padding-top:27px" class="ion-text-center">
+        <ion-input placeholder="Όχι" style="background: #10F3C0;"></ion-input>
+      </ion-col>
+    </ion-row>
+    <div class="border"></div>
+    <ion-text>2. Έξοδα Διάθεσης €/μήνα <span>(συμπληρώστε όσα ισχύουν)</span></ion-text>
+    <ion-row class="fourRow" style="margin:0px 1rem">
+      <ion-col size="6">
+        <ion-label>Κοινόχρηστα</ion-label>
+        <div>
+          <ion-checkbox checked="true" mode="md"></ion-checkbox>
+          <ion-input placeholder="Μόνο Αριθμοί"></ion-input>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <ion-label>Ρέυμα</ion-label>
+        <div>
+          <ion-checkbox checked="true"></ion-checkbox>
+          <ion-input placeholder="Μόνο Αριθμοί"></ion-input>
+        </div>
+      </ion-col>
+      </ion-row>
+      <ion-row class="fourRow"  style="margin:0px 1rem">
+        <ion-col size="6">
+          <ion-label>Νερό</ion-label>
+          <div>
+            <ion-checkbox checked="true" mode="md"></ion-checkbox>
+            <ion-input placeholder="Μόνο Αριθμοί"></ion-input>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label>ΕΝΦΙΑ</ion-label>
+          <div>
+            <ion-checkbox checked="true"></ion-checkbox>
+            <ion-input placeholder="Μόνο Αριθμοί"></ion-input>
+          </div>
+        </ion-col>
+        </ion-row>
+        <div class="border"></div>
+        <ion-text>3. Διαθεσιμότητα</ion-text>
+        <div style="margin:0px 1rem">
+          <ion-label>Είναι Άμεσα Διαθέσιμο;</ion-label>
+        </div>
+        <div class="smallDiv">
+          <ion-input placeholder="Ναι"></ion-input>
+          <ion-input placeholder="Όχι"style="background: #10F3C0"></ion-input>
+        </div>
+        <ion-label style="margin:0px 1rem">Είναι Διαθέσιμο για Βραχυπρόθεσμη Μίσθωση;</ion-label>
+        <div class="smallDiv">
+          <ion-input placeholder="Ναι"></ion-input>
+          <ion-input placeholder="Όχι"style="background: #10F3C0"></ion-input>
+        </div>
+        <div class="border"></div>
+        <ion-text>4. Σχόλια</ion-text>
+          <ion-textarea placeholder="e.g. pet policies, etc."></ion-textarea>
+        <ion-row class="footerRow">
+          <ion-label routerLink="/tabs/addnewpropertylocation"><ion-icon name="chevron-back-outline"></ion-icon>Previous Step</ion-label>
+          <ion-label routerLink="/tabs/addnewpropertymedia">Next Step<ion-icon name="chevron-forward-outline"></ion-icon></ion-label>
+        </ion-row>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="footer">
+    <ion-icon name="chevron-up-outline"></ion-icon>Back to top
+  </div>
+</ion-footer>

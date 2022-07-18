@@ -8,7 +8,6 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <div class="mainDiv">
     <h2>Add New Property</h2>
@@ -53,7 +52,7 @@
       <ion-col>
         <ion-label>Όροφος <span>*</span></ion-label>
         <ion-item lines="none" >
-          <ion-label style="margin:0px; margin-bottom:10px;" >Επιλέξτε Όροφο</ion-label>
+          <ion-label style="margin:0px; margin-bottom:10px; color:#818181" >Επιλέξτε Όροφο</ion-label>
           <ion-select name="month" style="padding:0px;margin-bottom:15px">
             <ion-select-option value="1">1</ion-select-option>
           </ion-select>
@@ -80,11 +79,11 @@
   <ion-row class="middelRow">
     <ion-col>
       <ion-label>Έτος Κατασκευής<span>*</span></ion-label>
-      <ion-input placeholder="π.χ. 2022"></ion-input>
+      <ion-input placeholder="π.χ. 2022" style="--placeholder-color:#818181"></ion-input>
     </ion-col>
     <ion-col>
       <ion-label>Έτος Ανακαίνισης </ion-label>
-      <ion-input placeholder="π.χ. 2022"></ion-input>
+      <ion-input placeholder="π.χ. 2022" style="--placeholder-color:#818181"></ion-input>
     </ion-col>
   </ion-row>
   <ion-text class="text">Κατάσταση Ακινήτου<span style="color:rgba(129, 129, 129, 1)">(Επιλέξτε ένα)</span></ion-text>
@@ -102,7 +101,7 @@
       <ion-input placeholder="Μέτρια"></ion-input>
     </ion-col>
   </ion-row>
-  <ion-row style="margin: 0px 1rem;">
+  <ion-row style="margin: 0px 1rem; align-items: center;">
     <ion-col size="6">
       <div class="QtyCol">
         <ion-text>Επίπεδα Ακινήτου</ion-text>
@@ -111,8 +110,7 @@
           <ion-label>1</ion-label>
           <ion-icon name="add-outline"></ion-icon>
         </div>
-      </div>
-      
+      </div> 
     </ion-col>
     <ion-col size="6">
       <div class="QtyCol">
@@ -125,7 +123,7 @@
       </div>
     </ion-col>
   </ion-row>
-  <ion-row style="margin: 0px 1rem;">
+  <ion-row style="margin: 0px 1rem;align-items:center;">
     <ion-col size="6">
       <div class="QtyCol">
         <ion-text>Τουαλέτες (WC)</ion-text>
@@ -149,20 +147,20 @@
   </ion-row>
   <ion-label style="padding-left:1rem;color:#000000; font-size: 11px;">Πόσο φωτεινό είναι το ακίνητο;</ion-label>
   <ion-row class="middelRow" style="margin:0px 8px">
-    <ion-col style="padding:0px 3px" class="ion-text-center">
-      <ion-input placeholder="Πολύ φωτεινό" style="--placeholder-color:#1B2E4A"></ion-input>
+    <ion-col class="ion-text-center">
+      <ion-input placeholder="Πολύ φωτεινό"></ion-input>
     </ion-col>
-    <ion-col style="padding:0px 3px"  class="ion-text-center">
-      <ion-input placeholder="Αρκετά φωτεινό" style="--placeholder-color:#1B2E4A"></ion-input>
+    <ion-col class="ion-text-center">
+      <ion-input placeholder="Αρκετά φωτεινό" ></ion-input>
     </ion-col>
-    <ion-col style="padding:0px 3px"  class="ion-text-center">
-      <ion-input placeholder="Μέτρια φωτεινό" style="--placeholder-color:#1B2E4A;background: #10F3C0; border:none"></ion-input>
+    <ion-col  class="ion-text-center">
+      <ion-input placeholder="Μέτρια φωτεινό" style="background: #10F3C0; border:none"></ion-input>
     </ion-col>
   </ion-row>
 
-  <ion-row style="margin:6px 1rem;justify-content:space-between; font-size:11px;">
-    <ion-label style="font-size:11px; font-weight:400;color:#000000;">Διαθέτει μπαλκόνι ή βεράντα;</ion-label>
-    <ion-label style="font-size:11px; font-weight:400;color:#000000;">Προσανατολισμός</ion-label>
+  <ion-row style="margin:6px 1rem; font-size:11px;"  class="ion-justify-content-between">
+    <ion-label style="font-size:11px;color:#000000;">Διαθέτει μπαλκόνι ή βεράντα;</ion-label>
+    <ion-label style="font-size:11px;color:#000000;">Προσανατολισμός</ion-label>
   </ion-row>
 
   <ion-row class="smallText">
@@ -172,11 +170,9 @@
   <div class="input">π.χ. 100
     <div style="color:rgba(0, 0, 0, 1)">τ.μ.</div>
   </div>
-
   <div class="upperText">Έχει θέα;
     <div>(Επιλέξτε έως 3)</div>
   </div>
-
   <div class="leftDiv">
     <div>Όχι</div>
     <div style="background:#10F3C0;border:none;">Ανοιχτωσιά</div>
@@ -190,14 +186,14 @@
   </div>
   <ion-text class="text">2. Θέρμανση και Ψύξη <span>*</span></ion-text>
   <ion-row class="middelRow">
-    <ion-col style="padding:0px 3px" class="ion-text-center">
-      <ion-input placeholder="Δεν Διαθέτει" style="--placeholder-color:#1B2E4A"></ion-input>
+    <ion-col  class="ion-text-center">
+      <ion-input placeholder="Δεν Διαθέτει"></ion-input>
     </ion-col>
-    <ion-col style="padding:0px 3px" class="ion-text-center">
-      <ion-input placeholder="Αυτόνομη" style="--placeholder-color:#1B2E4A"></ion-input>
+    <ion-col  class="ion-text-center">
+      <ion-input placeholder="Αυτόνομη" ></ion-input>
     </ion-col>
-    <ion-col style="padding:0px 3px" class="ion-text-center">
-      <ion-input placeholder="Κεντρική" style="--placeholder-color:#1B2E4A"></ion-input>
+    <ion-col  class="ion-text-center">
+      <ion-input placeholder="Κεντρική" ></ion-input>
     </ion-col>
   </ion-row>
 
@@ -390,7 +386,7 @@
       </div>
     </ion-col>
   </ion-row>
-  <ion-row style="margin: 0px 1rem; display:flex;align-items:center">
+  <ion-row style="margin:0px 1rem; display:flex;align-items:center">
     <ion-col size="9">
       <ion-text style="margin-right:2rem;font-size: 12px;">Συνολικός Αριθμός Ορόφων του Ακινήτου</ion-text>
     </ion-col>
@@ -415,10 +411,9 @@
     </ion-col>
   </ion-row>
 
-  <ion-row
-    style="margin-left: 1rem; margin-right:1.5rem;justify-content:space-between; font-size:11px; margin-top:10px">
-    <ion-label style="font-size:13px; font-weight:400;color:#000000;">Διαθέτει μπαλκόνι ή βεράντα;</ion-label>
-    <ion-label style="font-size:13px; font-weight:400;color:#000000;">1</ion-label>
+  <ion-row class="lastRow">
+    <ion-label >Διαθέτει μπαλκόνι ή βεράντα;</ion-label>
+    <ion-label >1</ion-label>
   </ion-row>
   <div class="upperText">Κατάσταση Κτηρίου
     <div>(Επιλέξτε ένα)</div>
@@ -430,14 +425,13 @@
     <div>Καλή</div>
     <div>Μέτρια</div>
   </div>
-  <div class="text-bottom">
+  <div class="text-bottom" routerLink="/tabs/addnewpropertylocation">
     <p>Next Step <ion-icon name="chevron-forward-outline"></ion-icon>
     </p>
   </div>
-
-  <ion-footer>
-    <div class="footer">
-      <ion-icon name="chevron-up-outline"></ion-icon>Back to top
-    </div>
-  </ion-footer>
 </ion-content>
+<ion-footer>
+  <div class="footer">
+    <ion-icon name="chevron-up-outline"></ion-icon>Back to top
+  </div>
+</ion-footer>

@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="Header">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        <ion-label>Save</ion-label>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainDiv">
+    <h2>Add New Property</h2>
+    <ion-label>Add a new property in 4 easy steps (tap to fill in)</ion-label>
+  </div>
+  <div class="middelDiv">
+    <ion-row>
+      <p>Step 1/4 - Characteristics</p>
+      <div class="check-box-div"  style="background: #10F3C0; border:none">
+      <ion-checkbox checked="true" style=" margin:0px;--background-checked:#10F3C0;
+      --border-color-checked:#10F3C0; --checkmark-color: white;" ></ion-checkbox>
+      </div>
+    </ion-row>
+    <ion-row class="mainRow">
+      <h3>Step 2/4 - Location</h3>
+      <div class="check-box-div"  style="background: #FFB800; border:none">
+        <ion-checkbox checked="true" style=" margin:0px;--background-checked:#FFB800;
+        --border-color-checked:#FFB800; --checkmark-color: white;" ></ion-checkbox>
+        </div>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 3/4 - Price and Availabilitys</p>
+      <div  class="check-box-div">
+        <ion-checkbox checked="true" class="custom-check-box"></ion-checkbox>
+      </div>
+    </ion-row>
+    <ion-row class="mainRow">
+      <p>Step 4/4 - Media</p>
+      <div  class="check-box-div">
+        <ion-checkbox checked="true" class="custom-check-box"></ion-checkbox>
+      </div>
+    </ion-row>
+  </div>
+  <div class="upperDiv">
+    <ion-text>1. Έυρεση Τοποθεσίας στον Χάρτη<span>(μόνο αν ορίσετε τοποθεσία στο χάρτη μπορεί η αγγελία σας να εμφανίζεται στα αποτελέσματα των αναζητήσεων μέσω χάρτη)</span></ion-text>
+    <div class="box">
+          <ion-searchbar mode="md" placeholder="Πληκτρολογήστε Οδό και Αριθμό"></ion-searchbar>
+       <img src="./assets/icon/image 5.png">
+    </div>
+    <ion-text>Ή Συμπληρώστε τα παρακάτω πεδία</ion-text>
+    <ion-row class="middelRow">
+      <ion-col size="6">
+        <ion-label>Χώρα <span>*</span></ion-label>
+        <ion-item lines="none" >
+          <ion-label style="margin:0px; margin-bottom:15px;  color:#818181;" >Επιλέξτε Χώρα</ion-label>
+          <ion-select name="month" style="padding:0px;margin-bottom:15px;">
+            <ion-select-option value="1">1</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-label>Περιοχή<span>*</span></ion-label>
+        <ion-item lines="none" >
+          <ion-label style="margin:0px; margin-bottom:15px;  color:#818181;" >Επιλέξτε Περιοχή</ion-label>
+          <ion-select name="month" style="padding:0px;margin-bottom:15px">
+            <ion-select-option value="1">1</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="middelRow">
+      <ion-col size="6">
+        <ion-label>Δήμος/Συνοικία<span>*</span></ion-label>
+        <ion-item lines="none" >
+          <ion-label style="margin:0px; margin-bottom:10px; color:#818181;" >Επιλέξτε Δήμο/Συνοικία</ion-label>
+          <ion-select name="month" style="padding:0px;margin-bottom:15px">
+            <ion-select-option value="1">1</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-label>Γειτονιά <span>*</span></ion-label>
+        <ion-item lines="none" >
+          <ion-label style="margin:0px; margin-bottom:10px; color:#818181;" >Επιλέξτε Δήμο/Συνοικία</ion-label>
+          <ion-select name="month" style="padding:0px;margin-bottom:15px">
+            <ion-select-option value="1">1</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="border"></div>
+  <ion-text style="margin:0px 1rem"> 2. Επιλέξτε τι θα Εμφανίζεται στον Χρήστη</ion-text>
+  <ion-row class="upperRow">
+      <ion-col size="6">
+        <div>
+          <ion-checkbox checked="true" mode="md"></ion-checkbox>
+          <ion-input placeholder="Οδός, Περιοχή, ΤΚ"></ion-input>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div>
+          <ion-checkbox checked="true" mode="md"></ion-checkbox>
+          <ion-item lines="none" style="width: 100%;" >
+            <ion-label style="margin:0px; margin-bottom:10px; color:#818181;" >Επιλέξτε Περιοχή</ion-label>
+            <ion-select name="month" style="padding:0px;margin-bottom:15px">
+              <ion-select-option value="1">1</ion-select-option>
+            </ion-select>
+            </ion-item>
+        </div>
+      </ion-col>
+  </ion-row>
+  <ion-row class="footerRow">
+    <ion-label><ion-icon name="chevron-back-outline" routerLink="/tabs/addnewproperty"></ion-icon>Previous Step</ion-label>
+    <ion-label  routerLink="/tabs/addnewpropertyprice">Next Step<ion-icon name="chevron-forward-outline"></ion-icon></ion-label>
+  </ion-row>
+</ion-content>
+<ion-footer>
+  <div class="footer">
+    <ion-icon name="chevron-up-outline"></ion-icon>Back to top
+  </div>
+</ion-footer>

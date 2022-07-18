@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
   {
     path:'',
     pathMatch:'full',
@@ -28,7 +27,6 @@ const routes: Routes = [
     path: 'splash',
     loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
   },
- 
   {
     path: 'personalaccount',
     loadChildren: () => import('./personalaccount/personalaccount.module').then( m => m.PersonalaccountPageModule)
@@ -84,6 +82,34 @@ const routes: Routes = [
   {
     path: 'mymatches2',
     loadChildren: () => import('./mymatches2/mymatches2.module').then( m => m.Mymatches2PageModule)
+  },
+  {
+    path: 'mychat',
+    loadChildren: () => import('./mychat/mychat.module').then( m => m.MychatPageModule)
+  },
+  {
+    path: 'mypropertieschat',
+    loadChildren: () => import('./mypropertieschat/mypropertieschat.module').then( m => m.MypropertieschatPageModule)
+  },
+  {
+    path: 'addnewpropertylocation',
+    loadChildren: () => import('./addnewpropertylocation/addnewpropertylocation.module').then( m => m.AddnewpropertylocationPageModule)
+  },
+  {
+    path: 'addnewpropertyprice',
+    loadChildren: () => import('./addnewpropertyprice/addnewpropertyprice.module').then( m => m.AddnewpropertypricePageModule)
+  },
+  {
+    path: 'addnewpropertymedia',
+    loadChildren: () => import('./addnewpropertymedia/addnewpropertymedia.module').then( m => m.AddnewpropertymediaPageModule)
+  },
+  {
+    path: 'addnewdemand',
+    loadChildren: () => import('./addnewdemand/addnewdemand.module').then( m => m.AddnewdemandPageModule)
+  },
+  {
+    path: 'mymatchesnewhere',
+    loadChildren: () => import('./mymatchesnewhere/mymatchesnewhere.module').then( m => m.MymatchesnewherePageModule)
   }
 ];
 @NgModule({

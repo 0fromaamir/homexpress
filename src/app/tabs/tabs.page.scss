@@ -33,6 +33,12 @@ ion-tab-bar{
     contain: unset;
 }
 ion-label{
-    margin-top:3px;
+    margin-top:3px; 
+}
+@media screen and(width:280px) {
+    ion-label{
+        margin-top:0px
+    }
+    
 }
 
